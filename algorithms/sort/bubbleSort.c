@@ -3,7 +3,7 @@
 int main(void) {
     int isSorted = 0;
     int numbers[] = {
-        2, 0, 1, 3
+        0,1,2,3,4,5,9,7,8,6
     };
     int originalLength = sizeof(numbers)/sizeof(int);
     int length = sizeof(numbers)/sizeof(int);
@@ -12,8 +12,8 @@ int main(void) {
     while(!isSorted) {
         isSorted = 1;
         for(int i = 0; i<length-1; i++) {
+            count++;
             if(numbers[i] > numbers[i+1]) {
-                count++;
 
                 int temp;
                 temp = numbers[i+1];
